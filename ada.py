@@ -4,7 +4,7 @@ def ada():
     lowercase = first_name.lower() + ' ' + last_name.lower()
     uppercase = first_name.upper() + ' ' + last_name.upper()
     title = first_name.title() + ' ' + last_name.title()
-    indentado = '    ' + lowercase
+    indentado = f"\t{lowercase}"
     print(lowercase)
     print(title)
     print(uppercase)
