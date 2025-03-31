@@ -1,6 +1,13 @@
-def change(expense, money):
-    print('Ingresar gasto: ', expense)
-    print('Dinero recibido: ', money)
+def change():
+    expense = 23.75
+    money = 100
+    print('Ingresar gasto:')
+    print(expense)
+    print('Dinero recibido')
+    print(money)
+    print('')
+    print('Vuelto')
+    print('')
     if expense > money:
         print('Saldo insuficiente')
         return False
@@ -10,8 +17,9 @@ def change(expense, money):
         change = money - expense
         change_entero = int(money - expense)
         change_centavos = change - (change_entero)
-        print('Vuelto: ', 'Pesos: ', change_entero, 'Centavos: ', change_centavos)
+        print('Pesos:')
+        print(change_entero)
+        print('Centavos:')
+        print(int(change_centavos * 100))
         return True
-gasto = 23.75
-dinero_recibido = 100
-change(gasto, dinero_recibido)
+change()
